@@ -343,6 +343,12 @@ section{padding:7rem 2rem;}
   min-height:220px;
   transition:border-color 0.2s;
 }
+.gallery-cell img{
+  transition:transform 0.4s ease;
+}
+.gallery-cell:hover img{
+  transform:scale(1.04);
+}
 .gallery-cell:hover{border-color:var(--gold);}
 .gallery-cell.tall{grid-row:span 2;min-height:460px;}
 .gallery-cell-label{
@@ -656,7 +662,7 @@ footer{
 <section id="gunther">
   <div class="gunther-inner">
     <span class="section-tag">&#x2726; &nbsp; Meet our chief product tester</span>
-    <span class="gunther-emoji">&#x1F415;</span>
+    <img src="images/gunther.jpg" alt="Günther the German Shepherd" style="width:220px;height:220px;object-fit:cover;border-radius:50%;border:3px solid #C47B15;margin:0 auto 1.5rem;display:block;">
     <h2 class="gunther-name">Günther</h2>
     <p class="gunther-sub">Our German Shepherd, born January 2024. Every batch of dog paw balm is tested and approved by Günther before a single tin ships. If he doesn't like it, it doesn't leave the house.</p>
     <a href="#products" class="btn-outline-gold">See Günther's Paw Balm</a>
@@ -826,44 +832,24 @@ footer{
     </div>
     <div class="gallery-grid">
       <div class="gallery-cell tall">
-        <div class="hc-tile"></div>
-        <div class="gallery-placeholder">
-          <span class="gallery-emoji">&#x1F41D;</span>
-          <span class="gallery-placeholder-text">Hive inspection</span>
-        </div>
-        <div class="gallery-cell-label">Hive Inspection Day</div>
+        <img src="images/frame.jpg" alt="Honeybee frame inspection at Aimee's Apiary" style="width:100%;height:100%;object-fit:cover;position:absolute;top:0;left:0;">
+        <div class="gallery-cell-label">Hive Inspection — Woodbridge, VA</div>
       </div>
       <div class="gallery-cell">
-        <div class="hc-tile"></div>
-        <div class="gallery-placeholder">
-          <span class="gallery-emoji">&#x1F36F;</span>
-          <span class="gallery-placeholder-text">Honey harvest</span>
-        </div>
-        <div class="gallery-cell-label">Summer Harvest</div>
+        <img src="images/Queen.jpg" alt="Queen bee surrounded by attendants" style="width:100%;height:100%;object-fit:cover;position:absolute;top:0;left:0;">
+        <div class="gallery-cell-label">The Queen &#x2014; Center of It All</div>
       </div>
       <div class="gallery-cell">
-        <div class="hc-tile"></div>
-        <div class="gallery-placeholder">
-          <span class="gallery-emoji">&#x1F43E;</span>
-          <span class="gallery-placeholder-text">Günther testing</span>
-        </div>
-        <div class="gallery-cell-label">Chief Tester at Work</div>
+        <img src="images/gunther.jpg" alt="Günther the German Shepherd, chief paw balm tester" style="width:100%;height:100%;object-fit:cover;position:absolute;top:0;left:0;">
+        <div class="gallery-cell-label">G&#xfc;nther &#x2014; Chief Product Tester</div>
       </div>
       <div class="gallery-cell">
-        <div class="hc-tile"></div>
-        <div class="gallery-placeholder">
-          <span class="gallery-emoji">&#x1FAD5;</span>
-          <span class="gallery-placeholder-text">Product making</span>
-        </div>
-        <div class="gallery-cell-label">Small Batch Production</div>
+        <img src="images/My_Start_May_7_2021.jpg" alt="First hive setup May 7 2021 — where it all began" style="width:100%;height:100%;object-fit:cover;position:absolute;top:0;left:0;">
+        <div class="gallery-cell-label">Where It All Started &#x2014; May 7, 2021</div>
       </div>
       <div class="gallery-cell">
-        <div class="hc-tile"></div>
-        <div class="gallery-placeholder">
-          <span class="gallery-emoji">&#x1F33B;</span>
-          <span class="gallery-placeholder-text">Foraging season</span>
-        </div>
-        <div class="gallery-cell-label">Sunflower Forage</div>
+        <img src="images/Swarm.jpg" alt="Swarm of bees clustering on a trap box" style="width:100%;height:100%;object-fit:cover;position:absolute;top:0;left:0;">
+        <div class="gallery-cell-label">Swarm Catch &#x2014; Free Bees!</div>
       </div>
     </div>
     <div class="gallery-ig-banner">
@@ -956,6 +942,20 @@ footer{
               <span class="contact-link-value">@AimeesApiary</span>
             </div>
           </a>
+          <a href="tel:7036461573" class="contact-link">
+            <span class="contact-link-icon">&#x1F4DE;</span>
+            <div>
+              <span class="contact-link-label">Phone</span>
+              <span class="contact-link-value">(703) 646-1573</span>
+            </div>
+          </a>
+          <a href="mailto:aimeesapiary@gmail.com" class="contact-link">
+            <span class="contact-link-icon">&#x2709;</span>
+            <div>
+              <span class="contact-link-label">Email</span>
+              <span class="contact-link-value">aimeesapiary@gmail.com</span>
+            </div>
+          </a>
           <a href="#" class="contact-link">
             <span class="contact-link-icon">&#x1F4CD;</span>
             <div>
@@ -1046,7 +1046,7 @@ footer{
       </div>
     </div>
     <div class="footer-bottom">
-      <p class="footer-copy">&copy; 2026 Aimee's Apiary &nbsp;&#183;&nbsp; Woodbridge, Virginia &nbsp;&#183;&nbsp; All rights reserved</p>
+      <p class="footer-copy">&copy; 2026 Aimee's Apiary LLC &nbsp;&#183;&nbsp; Woodbridge, Virginia &nbsp;&#183;&nbsp; All rights reserved</p>
       <p class="footer-hc">&#x2B22; &nbsp; Raw &nbsp;&#183;&nbsp; Pure &nbsp;&#183;&nbsp; Local &nbsp; &#x2B22;</p>
     </div>
   </div>
