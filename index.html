@@ -558,6 +558,17 @@ footer{
 }
 .product-footer{gap:0.7rem;flex-wrap:wrap}.product-price{font-size:0.68rem;letter-spacing:0.02em}
 @media(max-width:580px){.hero-sub{font-size:1.25rem}.product-footer{align-items:flex-start}}
+
+/* Compact honey FAQ; native details work without JavaScript. */
+#honey-faq{background:var(--cream);padding-block:3.5rem;}
+#honey-faq .section-inner{max-width:820px;}
+.honey-faq-list{border-top:1px solid var(--border-strong);}
+.honey-faq-list details{border-bottom:1px solid var(--border-strong);padding:1rem 0;}
+.honey-faq-list summary{cursor:pointer;font-size:1.05rem;font-weight:700;line-height:1.5;color:var(--text-dark);}
+.honey-faq-list summary::marker{color:var(--gold);}
+.honey-faq-list summary:focus-visible{outline:3px solid var(--gold);outline-offset:4px;}
+.honey-faq-list details p{margin:.65rem 0 0;font-size:1rem;line-height:1.65;color:var(--text-mid);}
+.honey-faq-note{margin-top:1.2rem;font-size:.9rem;color:var(--text-mid);}
 </style>
 <link rel="stylesheet" href="brand.css?v=20261012-contact">
 </head>
@@ -719,6 +730,33 @@ footer{
       </div>
       <p style="font-size:0.62rem;letter-spacing:0.15em;text-transform:uppercase;color:rgba(181,138,53,0.4);margin-top:1.5rem;">Virginia honey &#183; Harvested from our own hives</p>
     </div>
+  </div>
+</section>
+
+<!-- ── HONEY FAQ ── -->
+<section id="honey-faq" aria-labelledby="honey-faq-title">
+  <div class="section-inner">
+    <span class="section-tag">&#x2726; &nbsp; Honey questions</span>
+    <h2 class="section-title" id="honey-faq-title">A little honey <em>know-how</em></h2>
+    <div class="honey-faq-list">
+      <details>
+        <summary>Where does your honey come from?</summary>
+        <p>Our honey is harvested from our own hives in Woodbridge, Virginia. Its color and flavor vary with the flowers our bees visit.</p>
+      </details>
+      <details>
+        <summary>What sizes do you offer?</summary>
+        <p>Our honey bears hold 8 oz, 12 oz or 16 oz of honey by net weight. Check our Etsy shop for current availability.</p>
+      </details>
+      <details>
+        <summary>Why has my honey crystallized?</summary>
+        <p>Honey naturally forms sugar crystals over time; crystals alone do not mean it has spoiled. Enjoy it as a spread, or gently warm a portion in a heat-safe glass jar set in warm water.</p>
+      </details>
+      <details>
+        <summary>How should I store my honey?</summary>
+        <p>Keep it tightly closed at room temperature, away from direct sunlight and heat. Keep water out of the container.</p>
+      </details>
+    </div>
+    <p class="honey-faq-note"><strong>Please note:</strong> Do not feed honey to children younger than 12 months.</p>
   </div>
 </section>
 
@@ -907,7 +945,7 @@ footer{
         <ul>
           <li><a href="#about">Our Story</a></li>
           <li><a href="#gallery">Gallery</a></li>
-          
+          <li><a href="#honey-faq">Honey FAQ</a></li>
           <li><a href="#contact">Contact</a></li>
           <li><a href="https://www.instagram.com/aimeesapiary" target="_blank">Instagram</a></li>
           <li><a href="https://www.youtube.com/@AimeesApiary" target="_blank">YouTube</a></li>
