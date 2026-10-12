@@ -209,3 +209,28 @@ footer{background:#392B1D}
 
 /* Clean product-card actions: one prominent, readable link per product. */
 .product-footer{justify-content:flex-start}
+
+
+/* Contact form feedback matches the light contact-section palette. */
+.form-status {
+  margin-bottom:1rem;
+  padding:.9rem 1rem;
+  font-family:'Lato',Arial,sans-serif;
+  font-size:1rem;
+  font-weight:600;
+  line-height:1.55;
+  letter-spacing:0;
+  border:1px solid;
+  border-radius:3px;
+}
+.form-status--success {
+  color:#6C3D00;
+  background:#FBF0D3;
+  border-color:#C7A56E;
+}
+.form-status--error {
+  color:#8B2319;
+  background:#FFF0EE;
+  border-color:#D8A9A0;
+}
+.form-submit:disabled {opacity:.65;cursor:wait}

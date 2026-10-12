@@ -559,7 +559,7 @@ footer{
 .product-footer{gap:0.7rem;flex-wrap:wrap}.product-price{font-size:0.68rem;letter-spacing:0.02em}
 @media(max-width:580px){.hero-sub{font-size:1.25rem}.product-footer{align-items:flex-start}}
 </style>
-<link rel="stylesheet" href="brand.css?v=20261011-accessible">
+<link rel="stylesheet" href="brand.css?v=20261012-contact">
 </head>
 <body>
 
@@ -879,7 +879,7 @@ footer{
             <label for="msg">Message</label>
             <textarea id="msg" name="message" placeholder="Tell us what you're looking for..." required></textarea>
           </div>
-          <div id="formStatus" style="display:none;padding:0.75rem;margin-bottom:1rem;font-size:0.82rem;letter-spacing:0.1em;"></div>
+          <div id="formStatus" role="status" aria-live="polite" style="display:none;"></div>
           <button type="submit" class="form-submit">Send Message &#8594;</button>
           </form>
         </div>
@@ -956,16 +956,19 @@ document.addEventListener('DOMContentLoaded',function(){
     fetch(form.action,{method:'POST',body:new FormData(form),headers:{'Accept':'application/json'}})
     .then(function(r){
       if(r.ok){
-        status.style.cssText='display:block;padding:0.75rem;margin-bottom:1rem;font-size:0.82rem;background:rgba(181,138,53,0.15);color:#E8D4A0;border:1px solid rgba(181,138,53,0.4);letter-spacing:0.05em;';
+        status.className='form-status form-status--success';
+        status.style.display='block';
         status.textContent='\u2726  Thank you! Message submitted.';
-        form.reset();btn.textContent='Sent \u2714';
+        form.reset();btn.textContent='Send another message \u2192';btn.disabled=false;
       } else {
-        status.style.cssText='display:block;padding:0.75rem;margin-bottom:1rem;font-size:0.82rem;background:rgba(200,50,50,0.12);color:#ffaaaa;border:1px solid rgba(200,50,50,0.3);';
+        status.className='form-status form-status--error';
+        status.style.display='block';
         status.textContent='Something went wrong. Email us at aimeesapiary@gmail.com';
         btn.textContent='Send Message \u2192';btn.disabled=false;
       }
     }).catch(function(){
-      status.style.cssText='display:block;padding:0.75rem;margin-bottom:1rem;font-size:0.82rem;background:rgba(200,50,50,0.12);color:#ffaaaa;border:1px solid rgba(200,50,50,0.3);';
+      status.className='form-status form-status--error';
+        status.style.display='block';
       status.textContent='Connection error. Email aimeesapiary@gmail.com directly.';
       btn.textContent='Send Message \u2192';btn.disabled=false;
     });
