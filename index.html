@@ -569,6 +569,7 @@ footer{
 .honey-faq-list summary:focus-visible{outline:3px solid var(--gold);outline-offset:4px;}
 .honey-faq-list details p{margin:.65rem 0 0;font-size:1rem;line-height:1.65;color:var(--text-mid);}
 .honey-faq-note{margin-top:1.2rem;font-size:.9rem;color:var(--text-mid);}
+[hidden]{display:none!important;}
 </style>
 <link rel="stylesheet" href="brand.css?v=20261012-contact">
 </head>
@@ -583,12 +584,13 @@ footer{
   <ul class="nav-links">
     <li><a href="#about">Our Story</a></li>
     <li><a href="#products">Shop</a></li>
+    <li><a href="#markets">Markets</a></li>
     <li><a href="#gallery">Gallery</a></li>
     
     <li><a href="#contact">Contact</a></li>
   </ul>
   <a class="nav-shop" href="https://www.etsy.com/shop/AimeesApiary" target="_blank">Shop on Etsy &#8599;</a>
-  <button class="nav-mobile-btn" onclick="toggleMenu()" aria-label="Menu">
+  <button class="nav-mobile-btn" onclick="toggleMenu()" aria-label="Menu" aria-expanded="false" aria-controls="mobileMenu">
     <span></span><span></span><span></span>
   </button>
 </nav>
@@ -596,6 +598,7 @@ footer{
 <div class="mobile-menu" id="mobileMenu">
   <a href="#about" onclick="closeMenu()">Our Story</a>
   <a href="#products" onclick="closeMenu()">Shop</a>
+  <a href="#markets" onclick="closeMenu()">Markets</a>
   <a href="#gallery" onclick="closeMenu()">Gallery</a>
   
   <a href="#contact" onclick="closeMenu()">Contact</a>
@@ -689,14 +692,24 @@ footer{
     <p style="max-width:620px;color:var(--text-muted);margin-bottom:0.5rem;">Our honey and beeswax come from our own hives in Woodbridge, Virginia. We combine our beeswax with selected ingredients for practical small-batch goods. Check Etsy for current availability.</p>
     <div class="products-grid"><div class="product-card"><div class="product-img"><div class="label-fallback" aria-hidden="true"><span>AIMEE’S APIARY</span><strong>VIRGINIA HONEY</strong></div><img src="images/products/honey-label.jpg" alt="Virginia Honey – Aimee’s Apiary label artwork placeholder" loading="lazy" width="320" height="270" onerror="this.style.display='none'"></div><div class="product-body"><p class="product-cat">Honey</p><h3 class="product-name">Virginia Honey</h3><p class="product-desc">Own-hive honey in 8 oz, 12 oz and 16 oz honey bears. Flavor and color vary naturally by season.</p><div class="product-footer"><a href="https://www.etsy.com/shop/AimeesApiary" target="_blank" rel="noopener noreferrer" class="product-btn">Browse on Etsy &#8599;</a></div></div></div>
 <div class="product-card"><div class="product-img"><div class="label-fallback" aria-hidden="true"><span>AIMEE’S APIARY</span><strong>PAW PUTTY</strong></div><img src="images/products/paw-putty-label.jpg" alt="Paw Putty – Aimee’s Apiary label artwork placeholder" loading="lazy" width="320" height="270" onerror="this.style.display='none'"></div><div class="product-body"><p class="product-cat">Pet Care</p><h3 class="product-name">Paw Putty</h3><p class="product-desc">Unscented beeswax balm developed for routine care of clean, dry, intact paw pads. External use only; discourage licking.</p><div class="product-footer"><a href="https://www.etsy.com/shop/AimeesApiary" target="_blank" rel="noopener noreferrer" class="product-btn">Browse on Etsy &#8599;</a></div></div></div>
-<div class="product-card"><div class="product-img"><div class="label-fallback" aria-hidden="true"><span>AIMEE’S APIARY</span><strong>LIP BALM</strong></div><img src="images/products/lip-balm-label.jpg" alt="Beeswax Lip Balm – Aimee’s Apiary label artwork placeholder" loading="lazy" width="320" height="270" onerror="this.style.display='none'"></div><div class="product-body"><p class="product-cat">Personal Care</p><h3 class="product-name">Beeswax Lip Balm</h3><p class="product-desc">A simple, unscented lip balm made using beeswax from our hives and carefully selected oils and butter.</p><div class="product-footer"><a href="https://www.etsy.com/shop/AimeesApiary" target="_blank" rel="noopener noreferrer" class="product-btn">Browse on Etsy &#8599;</a></div></div></div>
+<div class="product-card"><div class="product-img"><div class="label-fallback" aria-hidden="true"><span>AIMEE’S APIARY</span><strong>LIP BALM</strong></div><img src="images/products/lip-balm-label.jpg" alt="Beeswax Lip Balm – Aimee’s Apiary label artwork placeholder" loading="lazy" width="320" height="270" onerror="this.style.display='none'"></div><div class="product-body"><p class="product-cat">Personal Care</p><h3 class="product-name">Beeswax Lip Balm</h3><p class="product-desc">Our unscented beeswax lip balm is still in development as we refine its firmness and finish. Not currently offered for sale.</p><div class="product-footer"><span class="product-cat">In development</span></div></div></div>
 <div class="product-card"><div class="product-img"><div class="label-fallback" aria-hidden="true"><span>AIMEE’S APIARY</span><strong>BEARD BALM</strong></div><img src="images/products/beard-balm-label.jpg" alt="Beard Balm – Aimee’s Apiary label artwork placeholder" loading="lazy" width="320" height="270" onerror="this.style.display='none'"></div><div class="product-body"><p class="product-cat">Personal Care</p><h3 class="product-name">Beard Balm</h3><p class="product-desc">An unscented, small-batch beard conditioner with beeswax, shea butter and botanical oils.</p><div class="product-footer"><a href="https://www.etsy.com/shop/AimeesApiary" target="_blank" rel="noopener noreferrer" class="product-btn">Browse on Etsy &#8599;</a></div></div></div>
 <div class="product-card"><div class="product-img"><div class="label-fallback" aria-hidden="true"><span>AIMEE’S APIARY</span><strong>BOARD BUTTER</strong></div><img src="images/products/board-butter-label.jpg" alt="Board Butter – Aimee’s Apiary label artwork placeholder" loading="lazy" width="320" height="270" onerror="this.style.display='none'"></div><div class="product-body"><p class="product-cat">Home & Kitchen</p><h3 class="product-name">Board Butter</h3><p class="product-desc">A beeswax and food-grade mineral oil conditioner for suitable unfinished wooden cutting boards and utensils.</p><div class="product-footer"><a href="https://www.etsy.com/shop/AimeesApiary" target="_blank" rel="noopener noreferrer" class="product-btn">Browse on Etsy &#8599;</a></div></div></div>
-</div><div style="text-align:center;margin-top:3rem;">
+<div class="product-card"><div class="product-body"><p class="product-cat">Candles</p><h3 class="product-name">Hand-Poured Beeswax Candles</h3><p class="product-desc">Small-batch candles made with beeswax from our own hives, including skeps, honey bears, honeycomb towers and our Garden Party set. Browse Etsy for current shapes and availability.</p><div class="product-footer"><a href="https://www.etsy.com/shop/AimeesApiary" target="_blank" rel="noopener noreferrer" class="product-btn">Shop candles &#8599;</a></div></div></div>
+<div class="product-card"><div class="product-body"><p class="product-cat">Honey gifts</p><h3 class="product-name">Bear Family</h3><p class="product-desc">Three sizes of our Virginia honey together: one 8 oz, one 12 oz and one 16 oz bear. A gift to share or a pantry trio to enjoy.</p><div class="product-footer"><a href="https://www.etsy.com/listing/4603838682/" target="_blank" rel="noopener noreferrer" class="product-btn">View gift set &#8599;</a></div></div></div></div><div style="text-align:center;margin-top:3rem;">
       <a href="https://www.etsy.com/shop/AimeesApiary" target="_blank" class="btn-gold">View Full Shop on Etsy &#8599;</a>
     </div>
   </div>
 </section>
+
+<section id="markets"><div class="section-inner">
+<span class="section-tag">&#x2726; Meet us locally</span><h2 class="section-title">Holiday <em>Markets</em></h2>
+<p>Come meet the beekeeper and browse honey and handmade beeswax goods. All times Eastern.</p>
+<div class="products-grid">
+<article class="product-card" data-market-end="2026-11-21T17:00:00-05:00"><div class="product-body"><h3>Cherrydale Holiday Market</h3><p>Saturday, November 21 · 11 a.m.–5 p.m.</p><p>3701 Lorcom Lane, Arlington, VA. Enter on Nelly Custis Drive.</p><a href="https://www.cherrydaleholidaymarket.com/">Event details</a></div></article>
+<article class="product-card" data-market-end="2026-12-12T14:00:00-05:00"><div class="product-body"><h3>Rockhill PTO Holiday Market</h3><p>Saturday, December 12 · 10 a.m.–2 p.m.</p><p>Rockhill Elementary School, 50 Wood Drive, Stafford, VA.</p></div></article>
+<article class="product-card" data-market-end="2026-12-26T16:00:00-05:00"><div class="product-body"><h3>Lost Boy Cider</h3><p>Saturday, December 26 · Noon–4 p.m.</p><p>Alexandria, VA. Find our honey and beeswax candles indoors.</p></div></article>
+</div><p id="marketEmpty" hidden>More market dates coming soon. Follow us on Instagram for updates.</p></div></section>
 
 <!-- ── HONEY FEATURE ── -->
 <section id="honey-feature">
@@ -903,6 +916,8 @@ footer{
               <option value="">Select a topic...</option>
               <option>Honey — order or question</option>
               <option>Paw Putty</option>
+              <option>Beeswax Candles</option>
+              <option>Gift Sets</option>
               <option>Lip Balm or Beard Balm</option>
               <option>Board Butter</option>
               <option>Wholesale Inquiry</option>
@@ -922,7 +937,7 @@ footer{
   </div>
 </section>
 
-<!-- ── FOOTER ── */
+<!-- ── FOOTER ── -->
 <footer>
   <div class="footer-inner">
     <div class="footer-top">
@@ -934,7 +949,7 @@ footer{
         <h4>Shop</h4>
         <ul>
           <li><a href="https://www.etsy.com/shop/AimeesApiary" target="_blank">Paw Putty</a></li>
-          <li><a href="https://www.etsy.com/shop/AimeesApiary" target="_blank">Lip Balm</a></li>
+          <li><a href="#products">Lip Balm · In development</a></li>
           <li><a href="https://www.etsy.com/shop/AimeesApiary" target="_blank">Virginia Honey</a></li>
           <li><a href="https://www.etsy.com/shop/AimeesApiary" target="_blank">Beard Balm</a></li>
           <li><a href="https://www.etsy.com/shop/AimeesApiary" target="_blank">Board Butter</a></li>
@@ -972,11 +987,17 @@ footer{
 <script>
 function toggleMenu(){
   const m=document.getElementById('mobileMenu');
-  m.classList.toggle('open');
+  const open=m.classList.toggle('open');
+  document.querySelector('.nav-mobile-btn').setAttribute('aria-expanded',String(open));
 }
 function closeMenu(){
   document.getElementById('mobileMenu').classList.remove('open');
+  document.querySelector('.nav-mobile-btn').setAttribute('aria-expanded','false');
 }
+// Hide completed market dates without changing their confirmed schedule.
+const marketCards=[...document.querySelectorAll('[data-market-end]')];
+marketCards.forEach(card=>{if(Date.now()>Date.parse(card.dataset.marketEnd))card.hidden=true;});
+document.getElementById('marketEmpty').hidden=marketCards.some(card=>!card.hidden);
 // Formspree AJAX submission
 document.addEventListener('DOMContentLoaded',function(){
   var form=document.getElementById('contactForm');
